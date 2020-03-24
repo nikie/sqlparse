@@ -16,6 +16,7 @@ def is_keyword(value):
             or KEYWORDS_ORACLE.get(val)
             or KEYWORDS_PLPGSQL.get(val)
             or KEYWORDS_HQL.get(val)
+            or KEYWORDS_TERADATA.get(val)
             or KEYWORDS.get(val, tokens.Name)), value
 
 
@@ -953,4 +954,35 @@ KEYWORDS_HQL = {
     'EXIT': tokens.Keyword,
     'BREAK': tokens.Keyword,
     'LEAVE': tokens.Keyword,
+}
+
+# Teradata Syntax
+KEYWORDS_TERADATA = {
+    'BYTEINT': tokens.Name.Builtin,
+    'GRAPHIC': tokens.Name.Builtin,
+    'RANGE_N': tokens.Name.Builtin,
+    'VARBYTE': tokens.Name.Builtin,
+    'VARGRAPHIC': tokens.Name.Builtin,
+
+    'AUTOCOMPRESS': tokens.Keyword,
+    'AMP': tokens.Keyword,
+    'BLOCKCOMPRESSION': tokens.Keyword,
+    'CHECKSUM': tokens.Keyword,
+    'CONCURRENT': tokens.Keyword,
+    'DATABLOCKSIZE': tokens.Keyword,
+    'DUAL': tokens.Keyword,
+    'FALLBACK': tokens.Keyword,
+    'FORMAT': tokens.Keyword,
+    'FREESPACE': tokens.Keyword,
+    'ISOLATED': tokens.Keyword,
+    'JOURNAL': tokens.Keyword,
+    'LOADING': tokens.Keyword,
+    'LOG': tokens.Keyword,
+    'MAXIMUM': tokens.Keyword,
+    'MERGEBLOCKRATIO': tokens.Keyword,
+    'MINIMUM': tokens.Keyword,
+    'MULTISET': tokens.Keyword,
+    'PERCENT': tokens.Keyword,
+    'PERIOD': tokens.Keyword,
+    'PROTECTION': tokens.Keyword,
 }
