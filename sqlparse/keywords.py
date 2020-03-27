@@ -982,6 +982,7 @@ KEYWORDS_TERADATA = {
     'MERGEBLOCKRATIO': tokens.Keyword,
     'MINIMUM': tokens.Keyword,
     'MULTISET': tokens.Keyword,
+    'NORMALIZE': tokens.Keyword,
     'PERCENT': tokens.Keyword,
     'PERIOD': tokens.Keyword,
     'PROTECTION': tokens.Keyword,
