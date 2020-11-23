@@ -970,7 +970,7 @@ KEYWORDS_TERADATA = {
     'CHECKSUM': tokens.Keyword,
     'CONCURRENT': tokens.Keyword,
     'DATABLOCKSIZE': tokens.Keyword,
-    'DUAL': tokens.Keyword,
+    # 'DUAL': tokens.Keyword,
     'FALLBACK': tokens.Keyword,
     'FORMAT': tokens.Keyword,
     'FREESPACE': tokens.Keyword,
